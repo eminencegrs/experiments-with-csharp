@@ -1,4 +1,4 @@
-name: .NET
+name: Magic Ball
 
 on:
   push:
@@ -11,8 +11,7 @@ on:
       - src/CSharp.Experiments.MagicBall/**
 
 jobs:
-  Magic-Ball-Build:
-    name: The Magic Ball build
+  build:
     runs-on: ubuntu-latest
 
     steps:

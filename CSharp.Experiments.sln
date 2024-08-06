@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.MagicBal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.FromDocumentation", "src\CSharp.Experiments.FromDocumentation\CSharp.Experiments.FromDocumentation.csproj", "{C818D562-146C-4909-9283-544BE945F23B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.Algorithms", "CSharp.Experiments.Algorithms\CSharp.Experiments.Algorithms.csproj", "{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.Algorithms", "src\CSharp.Experiments.Algorithms\CSharp.Experiments.Algorithms.csproj", "{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2FFB12C-8E9E-4952-9588-6607B2F99E6B}"
 EndProject

@@ -32,7 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\CSharp.Experiments.Algorithms\CSharp.Experiments.Algorithms.csproj" />
+      <ProjectReference Include="..\..\src\CSharp.Experiments.Algorithms\CSharp.Experiments.Algorithms.csproj" />
     </ItemGroup>
 
 </Project>
