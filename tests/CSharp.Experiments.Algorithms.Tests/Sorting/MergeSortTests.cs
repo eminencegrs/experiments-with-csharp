@@ -1,10 +1,18 @@
 using CSharp.Experiments.Algorithms.Sorting;
 using Shouldly;
+using Xunit;
 
 namespace CSharp.Experiments.Algorithms.Tests.Sorting;
 
 public class MergeSortTests
 {
+    [Fact]
+    public void GiveNull_WhenCallRun_ThenExceptionThrown()
+    {
+        Action action = () => new MergeSort().Run(null!);
+        action.ShouldThrow<ArgumentNullException>();
+    }
+
     [Theory]
     [MemberData(nameof(TestData))]
     public void GiveArray_WhenCallRun_ThenResultAsExpected(int[] numbers, int[] expectedResult)
