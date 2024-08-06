@@ -3,16 +3,17 @@ name: .NET
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - src/CSharp.Experiments.MagicBall/**
   pull_request:
     branches: [ "main" ]
+    paths:
+      - src/CSharp.Experiments.MagicBall/**
 
 jobs:
   Magic-Ball-Build:
     name: The Magic Ball build
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: src/CSharp.Experiments.MagicBall
 
     steps:
     - uses: actions/checkout@v4
