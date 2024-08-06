@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: CSharp.Experiments.MagicBall
+        working-directory: src/CSharp.Experiments.MagicBall
 
     steps:
     - uses: actions/checkout@v4
