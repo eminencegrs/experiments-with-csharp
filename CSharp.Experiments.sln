@@ -4,6 +4,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.MagicBal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.FromDocumentation", "src\CSharp.Experiments.FromDocumentation\CSharp.Experiments.FromDocumentation.csproj", "{C818D562-146C-4909-9283-544BE945F23B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.Algorithms", "CSharp.Experiments.Algorithms\CSharp.Experiments.Algorithms.csproj", "{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2FFB12C-8E9E-4952-9588-6607B2F99E6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BE6050AF-B59E-4992-A88D-DB3E18FD3164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.Algorithms.Tests", "tests\CSharp.Experiments.Algorithms.Tests\CSharp.Experiments.Algorithms.Tests.csproj", "{4B8E766A-2BBE-420D-82D8-AEAA2FC0C049}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +26,19 @@ Global
 		{C818D562-146C-4909-9283-544BE945F23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C818D562-146C-4909-9283-544BE945F23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C818D562-146C-4909-9283-544BE945F23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8E766A-2BBE-420D-82D8-AEAA2FC0C049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8E766A-2BBE-420D-82D8-AEAA2FC0C049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8E766A-2BBE-420D-82D8-AEAA2FC0C049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8E766A-2BBE-420D-82D8-AEAA2FC0C049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D} = {E2FFB12C-8E9E-4952-9588-6607B2F99E6B}
+		{C818D562-146C-4909-9283-544BE945F23B} = {E2FFB12C-8E9E-4952-9588-6607B2F99E6B}
+		{8EDB1676-014E-4EF8-9A91-3DBBD95EAAF5} = {E2FFB12C-8E9E-4952-9588-6607B2F99E6B}
+		{4B8E766A-2BBE-420D-82D8-AEAA2FC0C049} = {BE6050AF-B59E-4992-A88D-DB3E18FD3164}
 	EndGlobalSection
 EndGlobal
