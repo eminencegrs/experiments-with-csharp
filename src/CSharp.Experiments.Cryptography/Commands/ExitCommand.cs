@@ -1,14 +1,7 @@
 namespace CSharp.Experiments.Cryptography.Commands;
 
-public class ExitCommand : ICommand
+public class ExitCommand(CancellationTokenSource cts) : ICommand
 {
-    private readonly CancellationTokenSource cancellationTokenSource;
-
-    public ExitCommand(CancellationTokenSource cancellationTokenSource)
-    {
-        this.cancellationTokenSource = cancellationTokenSource;
-    }
-
     public bool CanExecute(ConsoleKey key)
     {
         return key is ConsoleKey.D3 or ConsoleKey.NumPad3;
@@ -18,8 +11,8 @@ public class ExitCommand : ICommand
     {
         Console.WriteLine("\nExiting the application...");
 
-        this.cancellationTokenSource.Cancel();
-        this.cancellationTokenSource.Dispose();
+        cts.Cancel();
+        cts.Dispose();
 
         return Task.CompletedTask;
     }
