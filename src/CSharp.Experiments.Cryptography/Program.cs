@@ -8,7 +8,9 @@ var builder = Host.CreateApplicationBuilder(args);
 
 var cts = new CancellationTokenSource();
 
+builder.Services.AddSingleton<IKeyGenerator, KeyGenerator>();
 builder.Services.AddSingleton<IEncryptionService, EncryptionService>();
+builder.Services.AddSingleton<ICommand, GenerateKeyCommand>();
 builder.Services.AddSingleton<ICommand, EncryptCommand>();
 builder.Services.AddSingleton<ICommand, DecryptCommand>();
 builder.Services.AddSingleton<ICommand, ExitCommand>(_ => new ExitCommand(cts));
@@ -19,6 +21,6 @@ using var host = builder.Build();
 
 var commandHandler = host.Services.GetRequiredService<ICommandHandler>();
 
-_ = Task.Run(() => Task.Delay(20)).ContinueWith(_ => commandHandler.HandleAsync(cts.Token));
+_ = Task.Run(() => commandHandler.HandleAsync(cts.Token));
 
 await host.RunAsync(cts.Token);

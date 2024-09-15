@@ -13,12 +13,13 @@ internal class CommandHandler(ICommandProvider commandProvider) : ICommandHandle
                 break;
             }
 
-            
+            Console.WriteLine();
             Console.WriteLine("Available options:");
-            Console.WriteLine("1. Encrypt text");
-            Console.WriteLine("2. Decrypt text");
-            Console.WriteLine("3. Exit");
-            Console.Write("Please press the corresponding key (1/2/3): ");
+            Console.WriteLine("Press `1` to generate a key");
+            Console.WriteLine("Press `2` to encrypt the text");
+            Console.WriteLine("Press `3` to decrypt the text");
+            Console.WriteLine("Press `x` to exit");
+            Console.Write("Please press the corresponding key (1/2/3/x): ");
 
             var key = Console.ReadKey(intercept: true).Key;
             Console.Write(key.ToString());
