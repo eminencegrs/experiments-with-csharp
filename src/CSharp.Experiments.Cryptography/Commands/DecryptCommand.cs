@@ -8,9 +8,11 @@ public class DecryptCommand(IEncryptionService encryptionService) : ICommand
     {
         Console.WriteLine("\nEnter a ciphertext to decrypt:");
         var ciphertext = Console.ReadLine();
+        ArgumentException.ThrowIfNullOrEmpty(ciphertext);
 
         Console.WriteLine("Enter the Base64-encoded (256-bit) key:");
         var base64Key = Console.ReadLine();
+        ArgumentException.ThrowIfNullOrEmpty(base64Key);
 
         var decryptedText = encryptionService.Decrypt(ciphertext, base64Key);
         Console.WriteLine($"Decrypted text: {decryptedText}");

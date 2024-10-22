@@ -8,9 +8,11 @@ public class EncryptCommand(IEncryptionService encryptionService) : ICommand
     {
         Console.WriteLine("\nEnter a plaintext to encrypt:");
         var plaintext = Console.ReadLine();
+        ArgumentException.ThrowIfNullOrEmpty(plaintext);
 
         Console.WriteLine("Enter a base64-encoded key (256-bit key):");
         var base64Key = Console.ReadLine();
+        ArgumentException.ThrowIfNullOrEmpty(base64Key);
 
         var encryptedText = encryptionService.Encrypt(plaintext, base64Key);
         Console.WriteLine($"Encrypted text: {encryptedText}");
