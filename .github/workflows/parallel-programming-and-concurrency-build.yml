@@ -1,14 +1,14 @@
-name: From Documentation
+name: Parallel Programming & Concurrency
 
 on:
   push:
     branches: [ "main" ]
     paths:
-      - src/CSharp.Experiments.FromDocumentation/**
+      - src/CSharp.Experiments.ParallelProgrammingAndConcurrency/**
   pull_request:
     branches: [ "main" ]
     paths:
-      - src/CSharp.Experiments.FromDocumentation/**
+      - src/CSharp.Experiments.ParallelProgrammingAndConcurrency/**
 
 jobs:
   build:

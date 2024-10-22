@@ -5,8 +5,8 @@ namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1;
 
 public class NetworkInfoBackgroundCheck
 {
-    private readonly ReaderWriterLockSlim syncLock = new();
-    private CheckStatus status;
+    private readonly ReaderWriterLockSlim syncLock = new ReaderWriterLockSlim();
+    private CheckStatus status = CheckStatus.Pending;
 
     public NetworkInfoBackgroundCheck()
     {
