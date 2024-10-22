@@ -1,5 +1,6 @@
 using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1;
 using FluentAssertions;
+using Xunit;
 
 namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1;
 

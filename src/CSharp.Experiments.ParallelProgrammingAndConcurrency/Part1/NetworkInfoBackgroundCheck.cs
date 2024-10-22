@@ -5,7 +5,7 @@ namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1;
 
 public class NetworkInfoBackgroundCheck
 {
-    private readonly ReaderWriterLockSlim syncLock = new ReaderWriterLockSlim();
+    private readonly ReaderWriterLockSlim syncLock = new();
     private CheckStatus status = CheckStatus.Pending;
 
     public NetworkInfoBackgroundCheck()
@@ -73,8 +73,8 @@ public class NetworkInfoBackgroundCheck
             for (var i = 0; i < 10; i++)
             {
                 Debug.WriteLine("Checking network status...");
-                var status = NetworkInterface.GetIsNetworkAvailable() ? "OK" : "Fail";
-                Debug.WriteLine($"Network status: {status}");
+                var statusMessage = NetworkInterface.GetIsNetworkAvailable() ? "OK" : "Fail";
+                Debug.WriteLine($"Network status: {statusMessage}");
 
                 Thread.Sleep(200);
             }
