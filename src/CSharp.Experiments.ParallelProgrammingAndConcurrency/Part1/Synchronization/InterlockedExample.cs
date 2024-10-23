@@ -1,8 +1,8 @@
 using System.Diagnostics;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization;
 
-public class InterlockedSynchronization
+public class InterlockedExample
 {
     private const int ThreadsNumber = 10;
     private readonly Dictionary<int, Thread> threads = new();
