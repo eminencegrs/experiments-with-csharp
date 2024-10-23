@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.Monitor;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.MonitorExamples;
 
 public class ThreadRunner
 {
@@ -46,5 +46,7 @@ public class ThreadRunner
         {
             consumer.Join();
         }
+
+        Debug.WriteLine("All threads finished.");
     }
 }

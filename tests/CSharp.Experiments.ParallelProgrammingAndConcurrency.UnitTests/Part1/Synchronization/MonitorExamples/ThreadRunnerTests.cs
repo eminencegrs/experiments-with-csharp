@@ -1,8 +1,8 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.Monitor;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.MonitorExamples;
 using FluentAssertions;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Synchronization.Monitor;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Synchronization.MonitorExamples;
 
 public class ThreadRunnerTests
 {
@@ -10,7 +10,7 @@ public class ThreadRunnerTests
     [InlineData(10, 10, 0)]
     [InlineData(100, 100, 0)]
     [InlineData(1000, 100, 900)]
-    public void Given_WhenRunDecrementer_ThenTaskIsCompleted(int number, int threadNumber, int expectedResult)
+    public void Given_WhenRunDecrementer_ThenResultAsExpected(int number, int threadNumber, int expectedResult)
     {
         var decrementer = new Decrementer(number);
         var cut = new ThreadRunner();
@@ -21,7 +21,7 @@ public class ThreadRunnerTests
     }
 
     [Fact]
-    public void Given_WhenRunProducerConsumer_ThenTaskIsCompleted()
+    public void Given_WhenRunProducerConsumer_ThenResultAsExpected()
     {
         var producerConsumer = new ProducerConsumer();
         var cut = new ThreadRunner();
