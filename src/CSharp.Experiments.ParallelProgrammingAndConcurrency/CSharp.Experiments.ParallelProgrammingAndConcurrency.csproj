@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Part1\Synchronization\" />
+    </ItemGroup>
+
 </Project>
