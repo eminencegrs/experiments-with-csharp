@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter2;
 using FluentAssertions;
 using FluentAssertions.Execution;
