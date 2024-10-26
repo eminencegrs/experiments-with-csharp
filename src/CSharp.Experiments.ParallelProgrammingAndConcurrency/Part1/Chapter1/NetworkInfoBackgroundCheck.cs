@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1;
 
 public class NetworkInfoBackgroundCheck
 {
@@ -48,7 +48,7 @@ public class NetworkInfoBackgroundCheck
 
         Debug.WriteLine($"{nameof(NetworkInfoBackgroundCheck)}: STARTED.");
 
-        var backgroundThread = new Thread(DoBackgroundWork)
+        var backgroundThread = new Thread(this.DoBackgroundWork)
         {
             IsBackground = true
         };

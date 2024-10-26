@@ -1,8 +1,8 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1;
 using FluentAssertions;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Chapter1;
 
 public class NetworkInfoBackgroundCheckTests
 {

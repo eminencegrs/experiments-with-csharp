@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.SchedulingAndPriorities;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.SchedulingAndPriorities;
 
 public class Calculator
 {

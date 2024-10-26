@@ -1,4 +1,4 @@
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.ReadWriteLockSlimExamples;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization.ReadWriteLockSlimExamples;
 
 public class ContactList
 {

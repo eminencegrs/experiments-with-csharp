@@ -1,9 +1,9 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.MonitorExamples;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization.MonitorExamples;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Synchronization.MonitorExamples;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Chapter1.Synchronization.MonitorExamples;
 
 public class SimpleCalculatorTests
 {

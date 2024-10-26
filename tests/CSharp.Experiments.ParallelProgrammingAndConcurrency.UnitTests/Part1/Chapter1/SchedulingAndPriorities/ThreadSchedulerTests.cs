@@ -1,10 +1,10 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.SchedulingAndPriorities;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.SchedulingAndPriorities;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Shouldly;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.SchedulingAndPriorities;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Chapter1.SchedulingAndPriorities;
 
 public class ThreadSchedulerTests
 {

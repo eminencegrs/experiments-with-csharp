@@ -1,9 +1,9 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.MutexExamples;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization.MutexExamples;
 using FluentAssertions;
 using Shouldly;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Synchronization.MutexExamples;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Chapter1.Synchronization.MutexExamples;
 
 public class AggregatorTests
 {

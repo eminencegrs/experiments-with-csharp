@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization;
 
 public class InterlockedExample
 {

@@ -1,8 +1,8 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization;
 using FluentAssertions;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Synchronization;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Chapter1.Synchronization;
 
 public class InterlockedExampleTests
 {

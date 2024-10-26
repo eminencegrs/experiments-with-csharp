@@ -6,6 +6,7 @@ public class ContinueWithExample
 {
     public async Task Run()
     {
+        // A single underscore `_` is a discard that replaces intentionally unused variable.
         await DoFirstThing().ContinueWith(_ => DoSecondThing());
     }
 

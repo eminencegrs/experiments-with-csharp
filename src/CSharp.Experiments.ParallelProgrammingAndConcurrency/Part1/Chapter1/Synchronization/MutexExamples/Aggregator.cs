@@ -1,7 +1,7 @@
 using System.Collections.Concurrent;
 using System.Diagnostics;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.MutexExamples;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization.MutexExamples;
 
 public class Aggregator : IDisposable
 {

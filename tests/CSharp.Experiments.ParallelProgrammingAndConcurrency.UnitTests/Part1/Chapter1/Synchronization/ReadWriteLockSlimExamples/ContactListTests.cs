@@ -1,10 +1,10 @@
-using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Synchronization.ReadWriteLockSlimExamples;
+using CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter1.Synchronization.ReadWriteLockSlimExamples;
 using FluentAssertions;
 using FluentAssertions.Execution;
 using Shouldly;
 using Xunit;
 
-namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Synchronization.ReadWriteLockSlimExamples;
+namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.Chapter1.Synchronization.ReadWriteLockSlimExamples;
 
 public class ContactListTests
 {
