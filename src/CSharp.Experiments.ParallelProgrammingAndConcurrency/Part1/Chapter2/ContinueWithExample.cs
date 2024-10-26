@@ -1,10 +1,12 @@
+using System.Diagnostics;
+
 namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter2;
 
 public class ContinueWithExample
 {
-    public void Run()
+    public async Task Run()
     {
-        DoFirstThing().ContinueWith(_ => DoSecondThing());
+        await DoFirstThing().ContinueWith(_ => DoSecondThing());
     }
 
     private static Task DoFirstThing()
@@ -12,6 +14,7 @@ public class ContinueWithExample
         try
         {
             Task.Delay(TimeSpan.FromSeconds(1));
+            Debug.WriteLine($"{nameof(DoFirstThing)} is working...");
             return Task.CompletedTask;
         }
         catch (Exception ex)
@@ -24,7 +27,8 @@ public class ContinueWithExample
     {
         try
         {
-            Task.Delay(TimeSpan.FromSeconds(2));
+            Task.Delay(TimeSpan.FromSeconds(1));
+            Debug.WriteLine($"{nameof(DoSecondThing)} is working...");
             return Task.CompletedTask;
         }
         catch (Exception ex)
