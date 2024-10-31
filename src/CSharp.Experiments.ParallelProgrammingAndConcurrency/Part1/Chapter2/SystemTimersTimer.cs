@@ -7,7 +7,7 @@ namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.Part1.Chapter2;
 // This timer will raise an 'Elapsed' event on a thread pool thread at the interval specified in the 'Interval' property.
 // The mechanism can be stopped or started by using the bool 'Enabled' property.
 // If you need the 'Elapsed' event to only fire once, the 'AutoReset' property can be set to 'false'.
-public class SystemTimersTimer : IDisposable
+public sealed class SystemTimersTimer : IDisposable
 {
     private readonly ConcurrentBag<long> signalTimes = [];
     private System.Timers.Timer? timer;
@@ -55,7 +55,7 @@ public class SystemTimersTimer : IDisposable
         this.signalTimes.Add(eventArgs.SignalTime.Ticks);
     }
 
-    protected virtual void Dispose(bool disposing)
+    private void Dispose(bool disposing)
     {
         if (this.disposed)
         {
