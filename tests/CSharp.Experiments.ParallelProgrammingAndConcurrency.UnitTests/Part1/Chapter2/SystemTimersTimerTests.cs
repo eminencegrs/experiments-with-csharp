@@ -7,7 +7,7 @@ namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.C
 public class SystemTimersTimerTests
 {
     [Fact]
-    public async Task GivenInterval_WhenStartTimerAndStopTimer_ThenElapsedEventIsTriggered10Times()
+    public async Task GivenInterval_WhenStartTimerAndStopTimer_ThenElapsedEventIsTriggered()
     {
         const uint intervalInMilliseconds = 99;
         var cut = new SystemTimersTimer();
