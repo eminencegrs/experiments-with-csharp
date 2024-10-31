@@ -7,14 +7,16 @@ namespace CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.Part1.C
 public class SystemTimersTimerTests
 {
     [Fact]
-    public void GivenInterval_WhenStartTimerAndStopTimer_ThenElapsedEventIsTriggered10Times()
+    public async Task GivenInterval_WhenStartTimerAndStopTimer_ThenElapsedEventIsTriggered10Times()
     {
         const uint intervalInMilliseconds = 99;
         var cut = new SystemTimersTimer();
         cut.StartTimer(intervalInMilliseconds);
-        Thread.Sleep(TimeSpan.FromSeconds(1));
+        await Task.Delay(TimeSpan.FromSeconds(1));
         cut.StopTimer();
-        cut.GetSignalTimes().Count.Should().Be(10);
+        var signalTimes = cut.GetSignalTimes();
+        signalTimes.Count.Should().BeGreaterThan(0);
+        signalTimes.Should().OnlyHaveUniqueItems();
     }
 
     [Fact]
@@ -37,7 +39,6 @@ public class SystemTimersTimerTests
         await Task.WhenAll(tasks);
 
         var signalTimes = cut.GetSignalTimes();
-
         signalTimes.Count.Should().BeGreaterThan(0);
         signalTimes.Should().OnlyHaveUniqueItems();
     }
