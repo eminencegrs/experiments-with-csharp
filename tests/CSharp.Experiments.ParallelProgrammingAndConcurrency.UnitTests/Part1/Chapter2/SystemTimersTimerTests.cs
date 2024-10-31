@@ -9,7 +9,7 @@ public class SystemTimersTimerTests
     [Fact]
     public async Task GivenInterval_WhenStartTimerAndStopTimer_ThenElapsedEventIsTriggered()
     {
-        const uint intervalInMilliseconds = 99;
+        const uint intervalInMilliseconds = 10;
         var cut = new SystemTimersTimer();
         cut.StartTimer(intervalInMilliseconds);
         await Task.Delay(TimeSpan.FromSeconds(1));
@@ -22,7 +22,7 @@ public class SystemTimersTimerTests
     [Fact]
     public async Task GivenIntervalAndManyTasks_WhenStartTimerAndStopTimer_ThenNoDataCorruptionOccurs()
     {
-        const uint intervalInMilliseconds = 99;
+        const uint intervalInMilliseconds = 10;
         var cut = new SystemTimersTimer();
 
         var tasks = new List<Task>();
@@ -31,7 +31,7 @@ public class SystemTimersTimerTests
             tasks.Add(Task.Run(() =>
             {
                 cut.StartTimer(intervalInMilliseconds);
-                Task.Delay(200).Wait();
+                Task.Delay(TimeSpan.FromSeconds(1)).Wait();
                 cut.StopTimer();
             }));
         }
