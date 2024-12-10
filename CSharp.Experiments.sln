@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.Parallel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests", "tests\CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests\CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.csproj", "{B4299B96-C64D-40A0-BCAD-BD0CC75CD79E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Experiments.FromDocumentation.Tests", "tests\CSharp.Experiments.FromDocumentation.Tests\CSharp.Experiments.FromDocumentation.Tests.csproj", "{92A6FBBA-0515-47CA-91E9-534B3709C53E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{B4299B96-C64D-40A0-BCAD-BD0CC75CD79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4299B96-C64D-40A0-BCAD-BD0CC75CD79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4299B96-C64D-40A0-BCAD-BD0CC75CD79E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92A6FBBA-0515-47CA-91E9-534B3709C53E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92A6FBBA-0515-47CA-91E9-534B3709C53E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92A6FBBA-0515-47CA-91E9-534B3709C53E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92A6FBBA-0515-47CA-91E9-534B3709C53E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9C29FE4E-3F6C-4610-AF96-4B81D2ACE32D} = {E2FFB12C-8E9E-4952-9588-6607B2F99E6B}
@@ -61,5 +67,6 @@ Global
 		{A7531DD0-DB9F-4E6F-87F7-7FA12D2A79C9} = {E2FFB12C-8E9E-4952-9588-6607B2F99E6B}
 		{8E851888-4CB6-4AA4-A55E-73A0A318C56B} = {E2FFB12C-8E9E-4952-9588-6607B2F99E6B}
 		{B4299B96-C64D-40A0-BCAD-BD0CC75CD79E} = {BE6050AF-B59E-4992-A88D-DB3E18FD3164}
+		{92A6FBBA-0515-47CA-91E9-534B3709C53E} = {BE6050AF-B59E-4992-A88D-DB3E18FD3164}
 	EndGlobalSection
 EndGlobal
