@@ -1,6 +1,7 @@
 ﻿using CommandLine;
 using CSharp.Experiments.MagicBall;
 
+
 await Parser.Default
     .ParseArguments<Options>(args)
     .WithParsedAsync(options =>
@@ -10,3 +11,4 @@ await Parser.Default
         Console.WriteLine($"Answer: {Answers.GetAnswer()}");
         return Task.CompletedTask;
     });
+

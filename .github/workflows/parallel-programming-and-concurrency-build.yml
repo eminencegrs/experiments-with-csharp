@@ -27,7 +27,12 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test and Collect Code Coverage
-      run: dotnet test --no-build --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      run: |
+        dotnet test --no-build \
+          tests/CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests/CSharp.Experiments.ParallelProgrammingAndConcurrency.UnitTests.csproj \
+          --verbosity normal \
+          /p:CollectCoverage=true \
+          /p:CoverletOutputFormat=opencover
     - name: Upload Coverage Reports to Codecov
       uses: codecov/codecov-action@v3
       with:
