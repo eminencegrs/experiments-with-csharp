@@ -79,6 +79,7 @@ public class CustomStackTests
 
     [Theory]
     [InlineData(1)]
+    [InlineData(int.MaxValue)]
     public void GivenItem_WhenPush_ThenResultAsExpected(int item)
     {
         var stack = new CustomStack<int>();
@@ -94,6 +95,7 @@ public class CustomStackTests
 
     [Theory]
     [InlineData(1)]
+    [InlineData(int.MaxValue)]
     public void GivenItem_WhenPushAndPop_ThenResultAsExpected(int item)
     {
         var stack = new CustomStack<int>();
@@ -115,6 +117,7 @@ public class CustomStackTests
 
     [Theory]
     [InlineData(1)]
+    [InlineData(int.MaxValue)]
     public void GivenItem_WhenPushAndPeek_ThenResultAsExpected(int item)
     {
         var stack = new CustomStack<int>();
