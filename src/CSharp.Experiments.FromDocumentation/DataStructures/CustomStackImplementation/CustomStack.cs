@@ -13,8 +13,12 @@ public sealed class CustomStack<T>
         this.items = new T[capacity];
     }
 
+    // Time Complexity: O(1).
     public bool IsEmpty => this.currentIndex < 0;
 
+    // Time Complexity:
+    //  -- 0(1) - when the number of items is less than the capacity of the stack.
+    //  -- O(n) - when the capacity needs to be increased to accommodate the new element.
     public void Push(T item)
     {
         if (this.currentIndex == this.items.Length - 1)
@@ -25,6 +29,7 @@ public sealed class CustomStack<T>
         this.items[++this.currentIndex] = item;
     }
 
+    // Time Complexity: O(1).
     public T Pop()
     {
         if (this.currentIndex < 0)
@@ -35,6 +40,7 @@ public sealed class CustomStack<T>
         return this.items[this.currentIndex--];
     }
 
+    // Time Complexity: O(1).
     public T Peek()
     {
         if (this.currentIndex < 0)
