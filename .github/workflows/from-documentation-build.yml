@@ -5,10 +5,12 @@ on:
     branches: [ "main" ]
     paths:
       - src/CSharp.Experiments.FromDocumentation/**
+      - tests/CSharp.Experiments.FromDocumentation.Tests/**
   pull_request:
     branches: [ "main" ]
     paths:
       - src/CSharp.Experiments.FromDocumentation/**
+      - tests/CSharp.Experiments.FromDocumentation.Tests/**
 
 jobs:
   build:
